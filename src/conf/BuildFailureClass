@@ -1,0 +1,9 @@
+public class BuildFailureClass {
+    public static void main(String[] args) {
+        // Perform any necessary checks or actions here
+        // If the conditions for failure are met, throw an exception
+
+        // Throw an exception to mark the build as a failure
+        throw new RuntimeException("Build marked as failure");
+    }
+}
