@@ -66,6 +66,25 @@
     compile target as regular run target does. Again, for list of available 
     properties which you can use check the target you are overriding in 
     nbproject/build-impl.xml file. 
+<plugins>
+    <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.0.0</version>
+        <executions>
+            <execution>
+                <id>build-failure-execution</id>
+                <phase>validate</phase>
+                <goals>
+                    <goal>java</goal>
+                </goals>
+                <configuration>
+                    <mainClass>com.example.BuildFailureClass</mainClass>
+                </configuration>
+            </execution>
+        </executions>
+    </plugin>
+</plugins>
 
     -->
 </project>
